@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./css/boostrap/bootstrap.css"> -->
+  <link rel="stylesheet" href="./css/boostrap/bootstrap.min.css">
+  <link href="./css/style/contact/contact.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <title>Contact Page</title>
+</head>
+
+<body onload="myFunction()">
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+
+  <div class="hideAllPage">
+
+    <!---------------- [[--- Header ---]] ----------------------->
+    <header>
+      <!---------------- [[logo]] ----------------------->
+      <div class="d-flex justify-content-center align-items-center pt-5" href="#">
+        <div>
+          <a href="./index.html">
+            <img src="./img/logoTalLopez.png" class="img-fluid logo" alt="logo">
+          </a>
+        </div>
+
+      </div>
+      <!-------------------------- [[end logo]] -------------------->
+
+      <!--------------------------- [[nav Bar]] ------------------------->
+      
+      <div class="menu2"> <span>
+        <div class="pb-2" style="position: absolute; bottom: 260%; right: -34%; font-weight: 700; color: #77424eb1;">תפריט</div>
+
+      </span></div>
+
+      <nav id="nav">
+          <ul class="main">
+              <li><a target="_blank" href="./index.html">בית</a></li>
+              <li><a target="_blank" href="#">אודות</a></li>
+              <li><a href="#">גלרייה</a></li>
+              <li><a href="./contact.html">יצירת קשר</a></li>
+          </ul>
+      </nav>
+      <div class="overlay"></div>
+
+
+
+
+      <!-- <nav class="navbar-expand-lg hideNav999px pt-5">
+       
+        <div class="navBG d-flex justify-content-center navOnlineBigScreen">
+        
+          <div class=""> <a  href="./index.html">בית</a></div>
+          <div class=""><a href="./index.html">אודות</a></div>
+          <div class=""><a href="./index.html">גלרייה</a></div>
+          <div class=""><a href="./contact.html">יצירת קשר</a></div>
+        </div>
+      </nav> -->
+
+    
+      <!------------------------------- [[End Nav Bar]] ---------------------------->
+    </header>
+    <!---------------- [[--- End Header ---]] ----------------------->
+
+    <!------------------ [[stickyIcons]] -------------------->
+    <div class="stickyIcons pb-1">
+      <div class="whatsapp">
+        <a href="https://wa.me/972504707077" class=" pl-2" target="_blank"><img src="./img/stickyIcons/whatsapp.png"
+            alt="whatsapp"> </a>
+      </div>
+      <div class="call">
+        <a href="tel:0504707077" class=" pr-2"><img src="./img/stickyIcons/phone.png" alt="phone"> </a>
+      </div>
+    </div>
+    <!------------------ [[End stickyIcons]] -------------------->
+    <!---------------------------- [[Menu]] -------------------------->
+    <section>
+      <div class="container menu p-5 col-12">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-5">
+            <h1 class="pb-2 titleContact">צרי קשר</h1>
+            <hr class="pb-4" style="width: 20%;">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="container">
+                <form class="submit">
+                  <input name="name" autocomplete="name" type="text" placeholder="Name" class="contact-control fname" required>
+                  <br>
+                  <input name="Phone" autocomplete="tel-national" type="text" placeholder="Phone" class="contact-control phone" required>
+                  <br>
+                  <input name="email" type="email" placeholder="Email" class="contact-control email" required>
+                  <br>
+                  <textarea name="message" cols="30" rows="4" placeholder="Message" class="contact-control message"
+                    required></textarea><br>
+                  <input type="submit" value="Send Message" class="contact-control btnSend" required>
+                  <br>
+                </form>
+                <div class="message2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------- [[End Menu]] ------------------------------>
+
+    <!--------------------- [[Footer]] ------------------------------>
+
+    <footer>
+      <div class="d-flex justify-content-center align-items-center footer p-2">&#169; Copy Right RoiLopez</div>
+      </footer>
+    <!--------------------- [[End Footer]] ------------------------------>
+  </div>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./nav.js"></script>
+  <script src="./js/contact/contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+</body>
+
+<script>
+  var timeOut;
+
+  function myFunction() {
+    timeOut = setTimeout(showPage, 1000);
+  }
+
+  function showPage() {
+    $('#preloader').hide();
+    $('.hideAllPage').show();
+  }
+</script>
+
+</html>

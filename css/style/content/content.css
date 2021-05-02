@@ -1,0 +1,522 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.hideAllPage {
+  display: none;
+}
+
+.stickyIcons .whatsapp {
+  display: none;
+}
+
+.stickyIcons .call {
+  display: none;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f2cc0f;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #6453a6;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #8cbf3f;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 1.1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0px 0px 6px #6453a6b4;
+          box-shadow: inset 0px 0px 6px #6453a6b4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6453a6;
+  border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #6453a6b4;
+}
+
+.navbar-nav {
+  margin-left: 23px;
+}
+
+.navbar-toggler-icon:active {
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.togglerPosi {
+  margin-right: 83px;
+}
+
+.navStyle {
+  background-color: #0d0d0d !important;
+  font-family: 'Henny Penny', cursive;
+}
+
+.navStyle .navTextColor {
+  color: #6453a6 !important;
+  font-weight: 700;
+}
+
+.navStyle .navTextColor:active {
+  -webkit-transition: ease-in-out all 0.1s;
+  transition: ease-in-out all 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.navStyle .navTextColor2 {
+  color: #8cbf3f !important;
+}
+
+.navStyle .navTextColor2:active {
+  -webkit-transition: ease-in-out all 0.1s;
+  transition: ease-in-out all 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.navStyle .navTextColor3 {
+  color: #f2cc0f !important;
+}
+
+.navStyle .navTextColor3:active {
+  -webkit-transition: ease-in-out all 0.1s;
+  transition: ease-in-out all 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.navStyle .navTextColor4 {
+  color: #6453a6 !important;
+}
+
+.navStyle .navTextColor4:active {
+  -webkit-transition: ease-in-out all 0.1s;
+  transition: ease-in-out all 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.navStyle .navTextColor5 {
+  color: #8cbf3f !important;
+}
+
+.navStyle .navTextColor5:active {
+  -webkit-transition: ease-in-out all 0.1s;
+  transition: ease-in-out all 0.1s;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+
+.logo {
+  width: 255px;
+}
+
+.containerQuestion {
+  width: 500px !important;
+  cursor: pointer;
+  background-color: #6453a6;
+  color: white;
+  border-radius: 15px;
+}
+
+.containerQuestion .question {
+  line-height: 40px;
+  border-bottom: 1px solid white;
+  border-radius: 8px;
+}
+
+.containerQuestion .answer {
+  text-align: left !important;
+  padding: 15px;
+  color: #f2cc0f;
+  border-bottom: 1px solid white;
+}
+
+.containerQuestion .answer div {
+  min-height: 20% !important;
+}
+
+.containerQuestion .answer h3 {
+  font-weight: 600 !important;
+  background-color: #6453a6;
+  border: none !important;
+  color: #f2cc0f !important;
+  text-align: center;
+}
+
+.containerQuestion .answer h3:active {
+  color: white;
+  border: none !important;
+}
+
+.quizForm {
+  width: 500px !important;
+  cursor: pointer;
+  background-color: #8cbf3f;
+  color: white;
+  border-radius: 15px;
+}
+
+.quizForm .question {
+  line-height: 40px;
+  border-bottom: 1px solid white;
+  border-radius: 8px;
+}
+
+.quizForm .answer {
+  text-align: left !important;
+  padding: 15px;
+  color: rgba(0, 0, 0, 0.494);
+  border-bottom: 1px solid white;
+}
+
+.quizForm .answer div {
+  min-height: 20% !important;
+}
+
+.quizForm .answer h3 {
+  font-weight: 600 !important;
+  border: none !important;
+  color: white !important;
+  text-align: center;
+}
+
+.quizForm .answer h3:active {
+  color: white;
+  border: none !important;
+}
+
+.titleContent {
+  font-size: 3em !important;
+  font-family: 'Henny Penny', cursive !important;
+  color: rgba(0, 0, 0, 0.597);
+  -webkit-animation-name: titleContentAnimation;
+          animation-name: titleContentAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes titleContentAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes titleContentAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.accordion {
+  -webkit-animation-name: fadeRight;
+          animation-name: fadeRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+.menu {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.menu h2 {
+  font-weight: 400;
+}
+
+.menu p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+@-webkit-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.footer {
+  color: #f2f2f2;
+  width: 100%;
+  height: 40px;
+  background-color: #323233;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .navbar-collapse {
+    position: relative;
+    left: 10%;
+  }
+  .form-inline {
+    display: none;
+  }
+  .stickyIcons {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 55% !important;
+    bottom: 0% !important;
+    z-index: 1 !important;
+  }
+  .stickyIcons .whatsapp {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 90% !important;
+    display: unset !important;
+  }
+  .stickyIcons .whatsapp img {
+    width: 60px !important;
+    height: auto !important;
+  }
+  .stickyIcons .whatsapp img:active {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: rotation 0.3s;
+            animation: rotation 0.3s;
+  }
+  .stickyIcons .call {
+    display: unset !important;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 90% !important;
+    left: 100% !important;
+    right: 0px;
+    z-index: 1 !important;
+  }
+  .stickyIcons .call img {
+    width: 60px !important;
+    height: auto !important;
+  }
+  .stickyIcons .call img:active {
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+    -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+    -webkit-animation: rotation 0.3s;
+            animation: rotation 0.3s;
+  }
+  @-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 999px) {
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 6%;
+  }
+  .titleContent {
+    font-size: 1.5em !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .hide {
+    display: none;
+  }
+  .stickyIcons {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 80% !important;
+    bottom: 0% !important;
+    z-index: 1 !important;
+  }
+  .stickyIcons .whatsapp {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 90% !important;
+    display: unset !important;
+  }
+  .stickyIcons .whatsapp img {
+    width: 60px !important;
+    height: auto !important;
+  }
+  .stickyIcons .whatsapp img:active {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: rotation 0.3s;
+            animation: rotation 0.3s;
+  }
+  .stickyIcons .call {
+    display: unset !important;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 90% !important;
+    left: 100% !important;
+    right: 0px;
+    z-index: 1 !important;
+  }
+  .stickyIcons .call img {
+    width: 60px !important;
+    height: auto !important;
+  }
+  .stickyIcons .call img:active {
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+    -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+    -webkit-animation: rotation 0.3s;
+            animation: rotation 0.3s;
+  }
+  @-webkit-keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+}
+/*# sourceMappingURL=content.css.map */
