@@ -16,7 +16,7 @@ body {
     }
 }
 
-// ---------------------- [-loader Settings-] ---------------------- //
+/// ---------------------- [-loader Settings-] ---------------------- //
 
 #preloader {
     position: fixed;
@@ -97,26 +97,25 @@ body {
     }
 }
 
+
 // ---------------------- [-End loader Settings-] ---------------------- //
 
 // ---------------------- [-Scroll Body Settings-] ---------------------- //
 
 body::-webkit-scrollbar {
-    width: 1.1em;
+    width: 0.8em;
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0px 0px 6px #6453a6b4;
-    color: rgba(0, 128, 0, 0.522);
+    box-shadow: inset 0px 0px 6px #eeccff;
 }
 
 body::-webkit-scrollbar-thumb {
-    // background-color: rgba(169, 169, 169, 0.604);
-    background-color: #6453a6;
+    background-color: #333333;
     border-radius: 30px;
 
     &:hover {
-        background-color: #6453a6b4;
+        background-color: #33333390;
     }
 }
 
